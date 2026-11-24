@@ -1,0 +1,67 @@
+import type { TopicExtras } from "../types.ts";
+
+export const extras: TopicExtras = {
+  hook: "Mount Merapi sits less than a two-hour flight from Singapore — and over 1.3 million people live within 25 km of its steaming summit. How can the same fiery mountain be both a deadly hazard and a life-giving source of wealth?",
+  didYouKnow: [
+    "Mauna Loa in Hawaii rises more than 9,170 m from the Pacific ocean floor — taller than Mount Everest from base to summit — yet its basaltic slopes average only about 6°!",
+    "In 1973, residents of Heimaey in Iceland pumped more than 6 million cubic metres of cold seawater onto an advancing lava flow for five months, successfully solidifying a rock dam that saved their vital fishing harbour.",
+    "During the 1991 Mount Pinatubo eruption in the Philippines, SO₂ aerosols rose 35 km into the stratosphere and cooled global average temperatures by roughly 0.5 °C for almost two years.",
+    "Geothermal pipes beneath central Reykjavik even run under busy pavements and car parks, melting winter snow automatically without salt trucks.",
+    "Volcanic ash is not soft bonfire ash — under a microscope, each grain is a razor-sharp shard of volcanic glass capable of scratching aircraft windscreens and melting inside jet turbines.",
+  ],
+  activities: [
+    {
+      title: "Kitchen Magma Viscosity & Slope Builder",
+      emoji: "🍯",
+      materials: [
+        "1 cup of warm water (low-viscosity basaltic lava model)",
+        "1 cup of cold honey or thick pancake syrup (high-viscosity acidic lava model)",
+        "Two flat plates, a spoon, a ruler, and a straw",
+      ],
+      steps: [
+        "Spoon 2 tablespoons of warm water slowly onto the centre of Plate 1. Measure the diameter and height of the puddle.",
+        "Spoon 2 tablespoons of cold thick honey onto the centre of Plate 2. Measure the diameter and height immediately after pouring.",
+        "Now gently blow air through a straw into a cup of water vs a cup of thick honey (wear eye protection and blow gently!). Observe how easily bubbles escape in each.",
+        "Compare the slope profile and bubble trapping in both liquids to shield vs composite volcanoes.",
+      ],
+      maths:
+        "Viscosity controls both slope angle (height ÷ radius = tan θ) and gas pressure build-up: runny basalt spreads wide (2°–10° shield) and lets gas escape quietly, while sticky silica-rich magma piles steeply (25°–35° cone) and traps gas until explosive release.",
+    },
+    {
+      title: "Crisis Room: Mount Merapi Alert Decision Challenge",
+      emoji: "📡",
+      materials: [
+        "A sketch map of a composite volcano with 3 river valleys and concentric 5 km, 10 km, and 20 km rings",
+        "4 sticky notes representing Seismometer, Tiltmeter, SO₂ Spectrometer, and Thermal Camera",
+        "Timer (3 minutes)",
+      ],
+      steps: [
+        "Mark a farming village (12,000 people + 2,500 cattle) in Valley A at 8 km, and a town (40,000 people) in Valley B at 15 km.",
+        "Simulate Day 1 (slight tilt only → Yellow Advisory), Day 3 (harmonic tremors + 3× SO₂ → Orange Watch), and Day 5 (all four sensors spiking → Red Evacuate).",
+        "Compute the land area inside a 10 km vs 20 km exclusion radius (πr²) and decide where to place both human shelters and livestock camps.",
+        "Debate with a partner: what happens if you evacuate too late versus issuing three false alarms in a row?",
+      ],
+      maths:
+        "Doubling an exclusion radius from 10 km to 20 km quadruples the evacuated area (π × 20² ÷ π × 10² = 4×) — showing how hazard geometry directly drives shelter capacity, bus logistics, and social planning.",
+    },
+  ],
+  bonusDiagrams: [
+    {
+      title: "Silica Content → Viscosity → Volcano Shape & Explosivity",
+      svg: `<svg viewBox="0 0 560 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Spectrum showing how rising silica percentage increases magma viscosity, slope steepness, and eruption explosivity"><rect x="0" y="0" width="560" height="250" rx="12" fill="var(--surface)" stroke="var(--line)"/><text x="280" y="24" text-anchor="middle" font-size="13" font-weight="800" fill="var(--ink)">The Magma Viscosity Spectrum</text><rect x="44" y="48" width="472" height="16" rx="8" fill="var(--surface-2)" stroke="var(--line)"/><rect x="44" y="48" width="158" height="16" rx="8" fill="var(--brand)" opacity="0.8"/><rect x="202" y="48" width="156" height="16" fill="var(--accent)" opacity="0.8"/><rect x="358" y="48" width="158" height="16" rx="8" fill="var(--bad)" opacity="0.85"/><text x="123" y="41" text-anchor="middle" font-size="10" font-weight="800" fill="var(--brand)">~50% Silica (Basaltic)</text><text x="280" y="41" text-anchor="middle" font-size="10" font-weight="800" fill="var(--warn)">~60% Silica (Andesitic)</text><text x="437" y="41" text-anchor="middle" font-size="10" font-weight="800" fill="var(--bad)">~70% Silica (Rhyolitic)</text><rect x="24" y="84" width="160" height="142" rx="10" fill="var(--brand-soft)" stroke="var(--brand)"/><text x="104" y="104" text-anchor="middle" font-size="11" font-weight="800" fill="var(--brand)">LOW VISCOSITY</text><path d="M 44 156 Q 104 134 164 156 Z" fill="var(--brand)" opacity="0.45" stroke="var(--brand)" stroke-width="1.8"/><text x="104" y="174" text-anchor="middle" font-size="9.5" font-weight="700" fill="var(--ink)">Shield Volcano (2°–10°)</text><text x="104" y="190" text-anchor="middle" font-size="9" fill="var(--ink-2)">Gas escapes freely</text><text x="104" y="204" text-anchor="middle" font-size="9" fill="var(--ink-2)">Frequent effusive lava</text><text x="104" y="218" text-anchor="middle" font-size="9" fill="var(--ink-2)">Mauna Loa · Iceland</text><rect x="200" y="84" width="160" height="142" rx="10" fill="var(--accent-soft)" stroke="var(--accent)"/><text x="280" y="104" text-anchor="middle" font-size="11" font-weight="800" fill="var(--warn)">MEDIUM–HIGH VISCOSITY</text><polygon points="228,156 274,114 286,114 332,156" fill="var(--accent)" opacity="0.45" stroke="var(--warn)" stroke-width="1.8"/><text x="280" y="174" text-anchor="middle" font-size="9.5" font-weight="700" fill="var(--ink)">Composite Cone (25°–35°)</text><text x="280" y="190" text-anchor="middle" font-size="9" fill="var(--ink-2)">Traps expanding gases</text><text x="280" y="204" text-anchor="middle" font-size="9" fill="var(--ink-2)">Explosive ash &amp; flows</text><text x="280" y="218" text-anchor="middle" font-size="9" fill="var(--ink-2)">Mt Merapi · Mt Fuji</text><rect x="376" y="84" width="160" height="142" rx="10" fill="var(--bad-soft)" stroke="var(--bad)"/><text x="456" y="104" text-anchor="middle" font-size="11" font-weight="800" fill="var(--bad)">EXTREME VISCOSITY</text><path d="M 404 156 L 434 126 Q 456 108 478 126 L 508 156 Z" fill="var(--bad)" opacity="0.45" stroke="var(--bad)" stroke-width="1.8"/><text x="456" y="174" text-anchor="middle" font-size="9.5" font-weight="700" fill="var(--ink)">Lava Dome / Caldera</text><text x="456" y="190" text-anchor="middle" font-size="9" fill="var(--ink-2)">Plugs vent tightly</text><text x="456" y="204" text-anchor="middle" font-size="9" fill="var(--ink-2)">Catastrophic blasts</text><text x="456" y="218" text-anchor="middle" font-size="9" fill="var(--ink-2)">Pinatubo · Mt St Helens</text></svg>`,
+      caption:
+        "One chemical slider — silica percentage — drives magma viscosity, gas trapping, volcano slope angle, and eruption explosivity across the globe.",
+    },
+    {
+      title: "Four-Tier Volcano Alert Ladder & Community Actions",
+      svg: `<svg viewBox="0 0 560 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Four-level volcano alert scale from Green Normal to Red Evacuation with matching monitoring signals and human actions"><rect x="0" y="0" width="560" height="250" rx="12" fill="var(--surface)" stroke="var(--line)"/><text x="280" y="24" text-anchor="middle" font-size="13" font-weight="800" fill="var(--ink)">Volcano Alert Ladder: From Monitoring to Evacuation</text><rect x="22" y="42" width="120" height="184" rx="10" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.8"/><text x="82" y="64" text-anchor="middle" font-size="11" font-weight="800" fill="var(--good)">1 · NORMAL</text><text x="82" y="84" text-anchor="middle" font-size="9.5" font-weight="700" fill="var(--ink)">Background state</text><text x="82" y="108" text-anchor="middle" font-size="9" fill="var(--ink-2)">Few micro-quakes</text><text x="82" y="124" text-anchor="middle" font-size="9" fill="var(--ink-2)">No flank swelling</text><text x="82" y="140" text-anchor="middle" font-size="9" fill="var(--ink-2)">Low SO₂ flux</text><line x1="36" y1="158" x2="128" y2="158" stroke="var(--good)" stroke-dasharray="3 3"/><text x="82" y="178" text-anchor="middle" font-size="9" font-weight="700" fill="var(--ink)">Action:</text><text x="82" y="194" text-anchor="middle" font-size="9" fill="var(--ink-2)">Hazard mapping &amp;</text><text x="82" y="208" text-anchor="middle" font-size="9" fill="var(--ink-2)">school drills</text><rect x="154" y="42" width="120" height="184" rx="10" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.8"/><text x="214" y="64" text-anchor="middle" font-size="11" font-weight="800" fill="var(--warn)">2 · ADVISORY</text><text x="214" y="84" text-anchor="middle" font-size="9.5" font-weight="700" fill="var(--ink)">Early unrest</text><text x="214" y="108" text-anchor="middle" font-size="9" fill="var(--ink-2)">Quake swarms rise</text><text x="214" y="124" text-anchor="middle" font-size="9" fill="var(--ink-2)">Slight tilt change</text><text x="214" y="140" text-anchor="middle" font-size="9" fill="var(--ink-2)">Steam warms up</text><line x1="168" y1="158" x2="260" y2="158" stroke="var(--warn)" stroke-dasharray="3 3"/><text x="214" y="178" text-anchor="middle" font-size="9" font-weight="700" fill="var(--ink)">Action:</text><text x="214" y="194" text-anchor="middle" font-size="9" fill="var(--ink-2)">Close summit trails,</text><text x="214" y="208" text-anchor="middle" font-size="9" fill="var(--ink-2)">add extra sensors</text><rect x="286" y="42" width="120" height="184" rx="10" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="1.8"/><text x="346" y="64" text-anchor="middle" font-size="11" font-weight="800" fill="var(--warn)">3 · WATCH</text><text x="346" y="84" text-anchor="middle" font-size="9.5" font-weight="700" fill="var(--ink)">Magma ascending</text><text x="346" y="108" text-anchor="middle" font-size="9" fill="var(--ink-2)">Harmonic tremors</text><text x="346" y="124" text-anchor="middle" font-size="9" fill="var(--ink-2)">Clear flank bulge</text><text x="346" y="140" text-anchor="middle" font-size="9" fill="var(--ink-2)">SO₂ jumps 3×–5×</text><line x1="300" y1="158" x2="392" y2="158" stroke="var(--accent)" stroke-dasharray="3 3"/><text x="346" y="178" text-anchor="middle" font-size="9" font-weight="700" fill="var(--ink)">Action:</text><text x="346" y="194" text-anchor="middle" font-size="9" fill="var(--ink-2)">Open shelters, stage</text><text x="346" y="208" text-anchor="middle" font-size="9" fill="var(--ink-2)">buses &amp; ash masks</text><rect x="418" y="42" width="120" height="184" rx="10" fill="var(--bad-soft)" stroke="var(--bad)" stroke-width="2"/><text x="478" y="64" text-anchor="middle" font-size="11" font-weight="800" fill="var(--bad)">4 · WARNING</text><text x="478" y="84" text-anchor="middle" font-size="9.5" font-weight="700" fill="var(--ink)">Eruption imminent</text><text x="478" y="108" text-anchor="middle" font-size="9" fill="var(--ink-2)">Intense tremors</text><text x="478" y="124" text-anchor="middle" font-size="9" fill="var(--ink-2)">Rapid dome swell</text><text x="478" y="140" text-anchor="middle" font-size="9" fill="var(--ink-2)">Ash venting starts</text><line x1="432" y1="158" x2="524" y2="158" stroke="var(--bad)" stroke-dasharray="3 3"/><text x="478" y="178" text-anchor="middle" font-size="9" font-weight="700" fill="var(--ink)">Action:</text><text x="478" y="194" text-anchor="middle" font-size="9" fill="var(--ink-2)">Mandatory exclusion</text><text x="478" y="208" text-anchor="middle" font-size="9" fill="var(--ink-2)">zone &amp; evacuation</text></svg>`,
+      caption:
+        "Clear stepped alert levels translate technical telemetry into rehearsed community actions well before pyroclastic flows strike.",
+    },
+  ],
+  history: {
+    title: "Mount Pinatubo (1991): The Forecast That Saved 20,000 Lives",
+    story:
+      "Mount Pinatubo in the Philippines had been quietly forested for nearly 500 years when villagers felt sudden small earthquakes and smelled sharp sulphur steam in April 1991. A rapid-response team of Philippine (PHIVOLCS) and USGS volcanologists rushed seismometers, tiltmeters, and gas spectrometers onto the jungle flanks. Over eight tense weeks, SO₂ emissions jumped tenfold to 5,000 tonnes/day, harmonic tremors intensified, and a viscous lava dome squeezed into the crater — then SO₂ suddenly plunged as the vent plugged shut. Recognising the classic sign of trapped explosive pressure, scientists convinced authorities to evacuate more than 60,000 people and two airbases just 48 hours before the second-largest volcanic eruption of the 20th century blasted a 35 km ash column into the sky on 15 June 1991. Although Typhoon Yunya tragically caused ~850 deaths through wet-ash roof collapses and lahars, scientific monitoring prevented an estimated 20,000+ fatalities — proving that prediction paired with bold evacuation transforms volcanic risk.",
+  },
+};
